@@ -1,0 +1,13 @@
+---
+layout: post
+title: 데이터베이스 설계와 구축
+date: '2015-10-30T19:26:00.001-07:00'
+author: schoolhompy
+tags:
+- 데이버베이스
+modified_time: '2017-06-25T02:22:53.641-07:00'
+blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-5945788331784641121
+blogger_orig_url: https://yunhos.blogspot.com/2015/10/blog-post_48.html
+---
+
+-PK 컬럼순서도 중요하다?<br/><br/>: where , join 절에서 인덱싱을 타기위한  pk 인덱스 순서도  중요하다.<br/><br/>복합인덱스의 경우에도 단순 스칼라 비교값이 먼저배치하고 between 등과 같은 연산이 필요한 컬럼등은 뒤로 배치하면 인덱스범위가 앞에서 부터 줄어든다.<br/><br/>-식별자와 비식별자<br/><br/>: 테이블을 식별자로만 설계하면 테이블간 강한 연결관계가 되어, 자식의 PK 에는 항상 부모의 PK 식별자가 있어야한다. 따라서 자식테이블에서는 식별자로만으로도 데이터를 얻어오는게 가능하다<br/>:비식별자로만 되어 있으면 약한 연결관계가 되는데, 자식테이블은 부모테이블의 PK에 상관없이  선언하기 때문에, 자식은PK선언에 ㅂ비교적 독립적이며 자식테이블에서 자료를 얻어낼려면 부모와의 조인참조가 필요하다.<br/><br/>- Transaction<br/><br/>: ACID(Atomicity, Consistency, Isolation, Durability)<br/>A: 업무를 처리하는 최소의 단위별로 작업해야 한다.<br/>C:일관성<br/>I:독립성(Lock 기능)<br/>D:영구성<br/><br/>-정규화 와 반정규화...<br/><br/>: 중요하다..쩝..<br/><br/>작업중

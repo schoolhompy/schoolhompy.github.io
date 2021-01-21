@@ -1,0 +1,13 @@
+---
+layout: post
+title: C# 크롬브라우저 넣기
+date: '2018-04-15T05:59:00.001-07:00'
+author: schoolhompy
+tags:
+- C#
+modified_time: '2018-04-16T08:18:43.205-07:00'
+blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-4858764210934365320
+blogger_orig_url: https://yunhos.blogspot.com/2018/04/c_15.html
+---
+
+http://printhelloworld.tistory.com/25<br /><br />아래는 사용법이긴 한데, 모듈 추가가 너무 많아<br />http://blog.naver.com/PostView.nhn?blogId=gmkjh74&amp;logNo=220957894170&amp;categoryNo=0&amp;parentCategoryNo=38&amp;viewDate=&amp;currentPage=1&amp;postListTopCurrentPage=1&amp;from=postView<br /><br />잘됨<br />CefSharp 너겟추가<br /><br />using CefSharp;<br />using CefSharp.WinForms;<br /><br /><br /><br />&nbsp; &nbsp; &nbsp; &nbsp; public ChromiumWebBrowser browser;<br />&nbsp; &nbsp; &nbsp; &nbsp; public void InitBrowser()<br />&nbsp; &nbsp; &nbsp; &nbsp; {<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Cef.Initialize(new CefSettings());<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; browser = new ChromiumWebBrowser("www.google.com");<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; this.Controls.Add(browser);<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; browser.Dock = DockStyle.Fill;<br />&nbsp; &nbsp; &nbsp; &nbsp; }<br /><br />폼에 이거 추가하면끝

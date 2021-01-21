@@ -1,0 +1,13 @@
+---
+layout: post
+title: 'Cocos2dx 4.0 맥에서 실행시 에러 '
+date: '2020-10-08T08:51:00.005-07:00'
+author: schoolhompy
+tags:
+- cocos2dx
+modified_time: '2020-10-08T08:51:43.830-07:00'
+blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-3300332529563384103
+blogger_orig_url: https://yunhos.blogspot.com/2020/10/cocos2dx-40.html
+---
+
+<p>&nbsp;-- The C compiler identification is unknown</p><p>-- The CXX compiler identification is unknown</p><p>CMake Error at CMakeLists.txt:30 (project):</p><p>&nbsp; No CMAKE_C_COMPILER could be found</p><p><br /></p><p>가 나오면&nbsp;</p><p>Xcode Commandline Tools 가 미쳐서 그런거니</p><p>sudo xcode-select --reset&nbsp;</p><p>하면 됨.</p><p><br /></p><p>물론 CMake는 최신판으로다가 받앙</p>

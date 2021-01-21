@@ -1,0 +1,13 @@
+---
+layout: post
+title: 두 박스간 스케일 비율 계산
+date: '2014-10-07T22:17:00.001-07:00'
+author: schoolhompy
+tags:
+- php
+modified_time: '2017-06-25T02:22:52.336-07:00'
+blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-6491525647107582060
+blogger_orig_url: https://yunhos.blogspot.com/2014/10/blog-post_14.html
+---
+
+this.percentageBetweenContainer=function( argContainer ) {<br/>var  pntContainer=argContainer;<br/><br/><br/>var floatXScale=1.0;<br/>var floatYScale= 1.0;<br/>var floatRet=1.0;<br/><br/><br/>if(  pntContainer.w  &gt; posBounds.w &amp;&amp;  pntContainer.h  &gt; posBounds.h ){<br/>return floatRet;<br/>}<br/><br/><br/>floatXScale=(pntContainer.w)/(posBounds.w);<br/>floatYScale=(pntContainer.h)/(posBounds.h);<br/><br/>if(floatXScale&lt;floatYScale){<br/>floatRet=floatXScale;<br/>}else{<br/>floatRet=floatYScale;<br/>}<br/>return floatRet;<br/>}

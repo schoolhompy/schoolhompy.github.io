@@ -1,0 +1,13 @@
+---
+layout: post
+title: 이펙티브 자바스크립트
+date: '2015-11-03T01:01:00.001-08:00'
+author: schoolhompy
+tags:
+- javascript
+modified_time: '2017-06-25T02:22:53.667-07:00'
+blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-1776316216608191647
+blogger_orig_url: https://yunhos.blogspot.com/2015/11/blog-post_3.html
+---
+
+<strong>이책은 사야됨 .정말로. 혼또우니~</strong><br/><ul><br/>	<li>== 비교는 절대금물, 자바스크립트는 지 맘대로 형변환을 하기때문에 == 비교는 절대 안됨. ===권장</li><br/>	<li>전역변수는 아예 사용하지마라. 단 플랫폼에 대한 프로퍼티를 참고 할때만 전역변수에 접근해라.</li><br/>	<li>지역변수 선언시 var 를 잊지마라. 잊는순간 전역변수가 될수도 있다.</li><br/>	<li><strong>Closure 는 이해하기 어렵지만 익숙해지면 좀더 유연한 프로그래밍이 가능하다.별도 게시물 준비.</strong></li><br/>	<li>함수내에서 모든 변수는 호이스트 된다. !!</li><br/>	<li><strong>지연변수 스코프(private 한 변수)를 만들기 위해서는 즉시함수를 이용하면된다.</strong><br/>함수 또는 객체내에서 내부함수와 클로져를 이용할때, 변수의 호이스트로 인해서 변수에 아무리 변화를 줘도 최종값만 나오는 경우가 있다.<br/>따라서 이때는 즉시실행함수로 wrapping 시킨다음, 내부변수에 재할당을 통해서 지역변수 스코프를 만들수 있다.<br/>function A(arg1){  for(i=0;i&lt;arg1.length,i++){ result[i]=function( arg1[i]; ); } }<br/>위의 코드에서 i 는 항상 호이스트 되기 떄문에 result[i] 는 항상 arg1의 마지막 값만 저장한다.<br/>따라서 (function(){ var j=i; result[i]=function( arg1[j]; )})(); 로 변경해야한다.IIFE??</li><br/>	<li>고차함수에 익숙해 져라. 공통된 로직은 고차함수로 리펙토링을 고려해 보자</li><br/>	<li>절대! argments 객체를 수정하지 마라.</li><br/>	<li>변수에 argments 의 참조를 저장해라.</li><br/>	<li>비공개 데이터를 저장/보전하기위해서 클로져를 사용해라.</li><br/>	<li>인스턴스 상태는 인스턴스 객체에 저장하라. 즉, 프로토타입에 변수나 배열등의 값을 배치하지마라. 프로토타입에는 프로토타입을 이용하는 객체들의 공유값만을 저장해라.</li><br/>	<li>따라서 하위 클래스(프로토타입)에서 상위(인스턴스)의 생성자를 호출할 필요가 있다.</li><br/>	<li>표준 클래스는 상속하지마라.</li><br/>	<li>순서사 정해진 컬렉션에는 딕셔너리 대신 배열을 사용해라(딕셔너리는 hash 배열이기 때문에 for in 으로 불러내도 순서가 보장되지 못한다.)</li><br/>	<li>배열을 반복할때 for...in 으로 하면 key 를 스트링으로 인식하여 순서가 보장되지 않으므로   for 반복문을 사용하라</li><br/>	<li>순서가 상관없다면 반복메서드(  object.forEach, map, filter) 등을 for (i......n) 대신에 이용하면 코드도 짧아지고 가독성도 좋아진다.</li><br/>	<li>arguments 는  array 를 상송받지 않기 때문에 forEach 를 사용할수 없다. -&gt; call 을 사용한다.</li><br/>	<li>또한 dom object 또한 array 를 상속받지 못한다. -&gt; call 을 사용한다.</li><br/>	<li><strong>배열 생성자 new 대신에 배열리터럴에 그냥 대입해서 배열을 만들자. 굳이 배열에 new 를 쓸필요는 없다는 것이다.</strong></li><br/></ul>

@@ -1,0 +1,13 @@
+---
+layout: post
+title: 커링 함수에 bind 사용하기
+date: '2015-03-01T12:31:00.001-08:00'
+author: schoolhompy
+tags:
+- javascript
+modified_time: '2017-06-25T02:22:52.586-07:00'
+blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-2945534106492592489
+blogger_orig_url: https://yunhos.blogspot.com/2015/03/bind_1.html
+---
+
+bind 는 기존의 함수나  메소드 에 영향을 주지않고 임시로 추가적인 함수를 만들어서 기존의 함수에 적용 을 시킨다.<br/><br/>function SimpleURL(protocol, domain, path){<br/>return protocol + "://"+domain+"/"+path;<br/>}<br/><br/>1.ㅂㅏ인드를 ㅅㅏ용하지  않는 일반적인 방법<br/><br/>var urls=paths.map(function(path){<br/>return SimpleURL("http",sitedomain,path);<br/>});<br/><br/>2.바인드를 사용 하여 심플 하게 변경<br/><br/>기 존의 함수에 bind(this, arg,arg) 식으로 선언하면,  arg 개수 를 가진 무명의 함수를 생성하여 이를 리 턴하고 다시 원래의 함수 를 호출(위임)하여   준다.<br/><br/>아래 예제에서는 simpleURL 에서는 this 등이 사용되지  않기 때문에 null  을 첫번째 인자로,<br/><br/>protocol과 domain 을 두번쨰 인자로 취하여 bind 가 새로운 함수를  생성한다음 함수리턴을 하고,<br/><br/>리턴된  함수 의 마지막에 path(map 에 의해 추출된 변수..여기서는  무명변수) 를  인자로 붙여 simpleurl 을 실행한다.<br/><br/>var urls=paths.map(SimpleURL.bind(null,"http",sitedomain));

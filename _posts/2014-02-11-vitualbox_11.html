@@ -1,0 +1,13 @@
+---
+layout: post
+title: vitualbox 에 라이온 해상도조절
+date: '2014-02-11T16:36:00.001-08:00'
+author: schoolhompy
+tags:
+- 서버 및 보안
+modified_time: '2017-06-25T02:22:52.079-07:00'
+blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-9204905709251090503
+blogger_orig_url: https://yunhos.blogspot.com/2014/02/vitualbox_11.html
+---
+
+<div>. 버빡에 Mac OS X VM만들기</div><div> </div><div>- 버빡에서 새로 만들기 누릅니다</div><div>- VM이름을 적절하게 입력하고 종류는 Mac OS X 64비트로 지정해줍니다.</div><div>- 메모리 크기랑 하드 크기만 님 맘대로 하고 나머지 옵션은 건들지 않도록 합니다.</div><div>- 딱 그 상태에서 도스창을 엽니다.</div><div>- 다음 명령어를 입력합니다.</div><div>VBoxManage modifyvm "snow" --firmware efi64<br />VBoxManage setextradata "snow" VBoxInternal2/EfiGopMode 4<br />VBoxManage setextradata "snow" VBoxInternal2/SmcDeviceKey  "ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc"</div><div><br />(글씨 짤렸는데 걍 메모장에 복사 붙여넣기 해보세여...)</div><div>- snow는 VM이름으로 바꿔서 입력하세여</div><div>- EfiGopMode 4는 화면 해상도를 지정하는 부분인데 구글질 해보세요</div><div>- 저거 안해주면 부팅하다 말아요</div><p> http://lsehoon.egloos.com/4814795 출처</p>

@@ -1,0 +1,13 @@
+---
+layout: post
+title: 웹에서 안드로이드 앱/특정 액티비티 실행하는 방법
+date: '2014-03-04T22:14:00.001-08:00'
+author: schoolhompy
+tags:
+- 안드로이드
+modified_time: '2017-06-25T02:22:52.092-07:00'
+blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-6403563917549474408
+blogger_orig_url: https://yunhos.blogspot.com/2014/03/blog-post_4.html
+---
+
+기기에서 크롬브라우져에서<br/><br/>$open =    'intent://myapphost/#Intent;scheme=myapp;package=com.test;end;';<br/>변수도 넘길수 있다.(S.key1=value1;S.key2=value2;end)<br/><br/>라는 링크를 만들고<br/><br/>앱에서는<br/><br/>manifest 에서<br/><br/>&lt;data android:scheme="myapp" android:host="myapphost" android:path="/" /&gt; 를 intent-filter 안에 넣으면 된다.각 activity 별로 지정가능하다.<br/><br/>* 변수 있을때는<br/><div><code>Intent intent = getIntent();</code></div><br/><div><code>String value1 = intent.getStringExtra(</code><code>"key1"</code><code>);</code></div><br/><div><code>String value2 = intent.getStringExtra(</code><code>"key2"</code><code>);</code></div><br/><div></div><br/>참고.<br/><br/>http://atmarkplant-dj.blogspot.kr/2013/12/android-chrome.html<br/><br/>구글에 정의된 거임.<br/><pre>ntent:<br/>   HOST/URI-path // Optional host <br/>   #Intent; <br/>      package=[string]; <br/>      action=[string]; <br/>      category=[string]; <br/>      component=[string]; <br/>      scheme=[string]; <br/>   end; <br/><br/><br/>http://stackoverflow.com/questions/16738276/how-do-i-pass-parameters-to-android-intent-in-new-scheme-on-chrome 참고.</pre>

@@ -1,0 +1,14 @@
+---
+layout: post
+title: IOS 11 , SWIFT4 에서 카메라로 찍은 사진 앨범으로 저장안되고 에러날때
+date: '2017-10-02T00:48:00.000-07:00'
+author: schoolhompy
+tags:
+- "--아이폰"
+- SWIFT
+modified_time: '2017-10-02T00:48:15.663-07:00'
+blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-4584919785253923376
+blogger_orig_url: https://yunhos.blogspot.com/2017/10/ios-11-swift4.html
+---
+
+<br /><div class="p1">[access] This app has crashed because it attempted to access privacy-sensitive data without a usage description. <span class="Apple-converted-space">&nbsp;</span></div><style type="text/css">p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Helvetica} </style>   <br /><div class="p1">The app's Info.plist must contain an NSPhotoLibraryAddUsageDescription key with a string value explaining to the user how the app uses this data.</div><div class="p1"><br /></div><div class="p1">에러가 뜰때는&nbsp;</div><div class="p1">info.plist 에</div><div class="p1"><br /></div><div class="p1">Privacy - Photo Library Additions Usage Description&nbsp; &nbsp;속성으로&nbsp; YES 값 넣어주면 잘됨</div>

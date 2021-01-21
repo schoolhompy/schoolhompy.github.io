@@ -1,0 +1,12 @@
+---
+layout: post
+title: JAVA 실버 부터 다시 공부
+date: '2018-01-26T20:07:00.002-08:00'
+author: schoolhompy
+tags: 
+modified_time: '2018-01-26T20:07:53.552-08:00'
+blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-3576078779167665979
+blogger_orig_url: https://yunhos.blogspot.com/2018/01/java.html
+---
+
+실버<br /><h2>1장</h2>2.패키지 3요소<br />-이름공간제공,액서스제어제공,클래스분류기능<br />4.자동적임포트는 java.lang 패키지전부, 같은 패키지클래스 전부<br />6.import static 패키지<br />7.static 변수를 임포트했을떄, Main 에 같은 이름의 static 변수가 있다면 Main 에 있는것을 사용한다.<br />package ex7;<br />public class Sample{<br />&nbsp; &nbsp; public final static int VALUE=100;<br />}<br /><br />import ...ex8.Sample.VALUE;<br />public class Main() {<br />&nbsp; &nbsp; public final static int VALUE=0;<br /><div>&nbsp; &nbsp; void main() {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; VALUE &lt;- 0 이됨<br />&nbsp; &nbsp; }<br />}<br />-또한 같은 이름의 변수가 다른 타입으로 중복선언되도 에러.<br />8.엔트리포인트, main 이다.(static 이며 string 배열을 arg 로 받고, public 이다)<br /><br /><span style="font-size: 24px; font-weight: 700;">2장</span><br /><br class="Apple-interchange-newline" />2.0 은 8진수, 0x 는 16진수 0b는 2진수</div><div>3._ 기호 붙는 규칙</div><div>-맨앞,맨뒤는 불가</div><div>-기호앞뒤불가</div><div>4. 일본어표기는 shift-js, euc-jp&nbsp; , 16진수는 ¥u 를 붙임&nbsp;</div><div>char c = 65 가 정확핳ㄴ 표현, null 은 대입불가</div><div>5.변수명규칙</div><div>예약어안됨, 통화기호랑_ 만허용,</div><div><br /><br /></div>

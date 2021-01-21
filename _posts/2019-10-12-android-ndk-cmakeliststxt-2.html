@@ -1,0 +1,12 @@
+---
+layout: post
+title: Android NDK  작성법 CMakeLists.txt 사용 -2
+date: '2019-10-12T07:28:00.000-07:00'
+author: schoolhompy
+tags: 
+modified_time: '2019-10-12T07:28:12.153-07:00'
+blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-7602184875282535704
+blogger_orig_url: https://yunhos.blogspot.com/2019/10/android-ndk-cmakeliststxt-2.html
+---
+
+1 . Native c++ 프로젝트로 시작하면 CMakeLists, cpp 폴더 등 자동 설정된 채로 프로젝트를 시작할수있다.<br />2 . CMakelist.txt 의 설명은 여기를 참고 *https://crmn.tistory.com/80<br />&nbsp; &nbsp; 굳이 CMake 를 배우려면&nbsp;<a href="https://www.tuwlab.com/ece/27234">https://www.tuwlab.com/ece/27234</a><br /><div>3 . CMakelists 에 사용할 라이브러리 추가</div><!-- HTML generated using hilite.me --><br /><div style="background: #ffffff; border-width: 0.1em 0.1em 0.1em 0.8em; border: solid gray; overflow: auto; padding: 0.2em 0.6em; width: auto;"><pre style="line-height: 125%; margin: 0;">add_library<span style="color: #333333;">(</span><br />        hello<span style="color: #333333;">-</span>libs <br />        SHARED<br />        hello<span style="color: #333333;">-</span>libs<span style="color: #333333;">.</span><span style="color: #0000cc;">cpp</span><span style="color: #333333;">)</span><br /></pre></div><div>4 . Activity 에서는<br /><!-- HTML generated using hilite.me --><br /><div style="background: #ffffff; border-width: 0.1em 0.1em 0.1em 0.8em; border: solid gray; overflow: auto; padding: 0.2em 0.6em; width: auto;"><pre style="line-height: 125%; margin: 0;">    <span style="color: #888888;">// Used to load the 'native-lib' library on application startup.</span><br />    <span style="color: #008800; font-weight: bold;">static</span> <span style="color: #333333;">{</span><br />        System<span style="color: #333333;">.</span><span style="color: #0000cc;">loadLibrary</span><span style="color: #333333;">(</span><span style="background-color: #fff0f0;">"native-lib"</span><span style="color: #333333;">);</span><br />        System<span style="color: #333333;">.</span><span style="color: #0000cc;">loadLibrary</span><span style="color: #333333;">(</span><span style="background-color: #fff0f0;">"hello-libs"</span><span style="color: #333333;">);</span><br />    <span style="color: #333333;">}</span><br /><br />    <span style="color: #008800; font-weight: bold;">public</span> <span style="color: #008800; font-weight: bold;">native</span> String <span style="color: #0066bb; font-weight: bold;">getHello</span><span style="color: #333333;">();</span><br /></pre></div><div>5.끝.<br /><br /></div><div><br /></div></div>

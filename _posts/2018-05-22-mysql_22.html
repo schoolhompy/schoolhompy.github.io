@@ -1,0 +1,13 @@
+---
+layout: post
+title: Mysql 프로시져 만들어서 대량 인서트 한방에
+date: '2018-05-22T16:31:00.002-07:00'
+author: schoolhompy
+tags:
+- MYSQL
+modified_time: '2018-05-22T16:31:13.550-07:00'
+blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-3956370859881411867
+blogger_orig_url: https://yunhos.blogspot.com/2018/05/mysql_22.html
+---
+
+delimiter //<br />&nbsp;create procedure loop_insert_resume0(in x int)<br />&nbsp;begin<br />&nbsp; &nbsp;declare max_id int;<br />&nbsp; &nbsp;declare i int;<br />&nbsp; &nbsp;set i = 0;<br />&nbsp; &nbsp;select max(id) into max_id from&nbsp; `TABLE`;<br />&nbsp; &nbsp;while i &lt; x do<br />&nbsp; &nbsp; &nbsp;set i = i + 1;<br />&nbsp; &nbsp; &nbsp;insert into `TABLE`&nbsp; (`FIELD1`, `FIELD2`, `id`)<br /><span style="white-space: pre;"> </span>&nbsp; select `FIELD1`, `FIELD2`, (max_id+i)&nbsp; from&nbsp; `TABLE` where&nbsp; `resume_id` = max_id;<br />&nbsp; &nbsp;end while;<br />&nbsp;end<br />//<br /><br />call loop_insert_resume0(50000);<br /><div><br /></div>

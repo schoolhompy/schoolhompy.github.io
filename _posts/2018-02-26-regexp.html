@@ -1,0 +1,14 @@
+---
+layout: post
+title: regexp 정규식 패턴 참고. <불라태그영어일어한국어또태그불라:숫자1-숫자2>
+date: '2018-02-26T18:33:00.001-08:00'
+author: schoolhompy
+tags:
+- 정규식
+- regexp
+modified_time: '2018-02-26T18:33:18.939-08:00'
+blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-5450831460853577493
+blogger_orig_url: https://yunhos.blogspot.com/2018/02/regexp.html
+---
+
+&lt;(?(?=(?:[^&gt;]*:(?:\d*)-(?:\d*)))(?:[^&gt;]*)|(?:(?:(?:(?:[^&lt;&gt;]*|(?R)*)&lt;)).+?)):(?:(?-)(?:([\w\d]+)-|)([\w\d]+))?&gt;<br /><br />이렇게 지저분하던게..<br />&lt;(?'itemSubject'(?:.?)*):(?-)(?:(?'itemType'[\w\d]+)-|)(?'itemId'[\w\d]+)&gt; 최종 패턴<br /><br />이렇게 정리<br /><br />테스트-&gt;<br />&lt;f&lt;b&gt;fff&lt;:/b&gt;f:U01&gt;<br />&lt;b:A:11-11433&gt;<br />&lt;氏&lt;a&gt;fevrefer名&lt;/aba&gt;タグ:11-11446&gt;<br /><br />(?(A)X|Y)<br /><br />(?:&lt;[^&gt;]*U01&nbsp; e:e1&gt;)<br /><br />즉<br /><br />&lt;불라태그영어일어한국어또태그불라:숫자1-숫자2&gt;는<br />group 1 : 숫자1<br />group 2 : 숫자2<br /><br /><br />&lt;불라태그영어일어한국어또태그불라:영숫자1&gt;는<br />group 1 : 없어<br />group 2 : 영숫자

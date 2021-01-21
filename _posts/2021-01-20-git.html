@@ -1,0 +1,13 @@
+---
+layout: post
+title: Git 커밋된 것중에 잘못커밋된 파일을 커밋하지 않은것 처럼 되돌리기.
+date: '2021-01-20T03:57:00.002-08:00'
+author: schoolhompy
+tags:
+- git
+modified_time: '2021-01-20T03:57:35.952-08:00'
+blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-5219959779716392086
+blogger_orig_url: https://yunhos.blogspot.com/2021/01/git.html
+---
+
+<p>&nbsp;커밋을 하다보면 엇. 저파일이 왜 올라가 있지. 할때가 온다.</p><p>그때 같은 커밋에서 그 파일만 쏙 뺴고 싶을때는</p><p><br /></p><p>git rebase -i HEAD^잘못올라간 커밋까지의 숫자(1부터 무한대)&nbsp;</p><p>하고 나서 숫자만큼의 커밋목록이 나타나면 파일을 없애고자 하는 커밋의 pick -&gt; edit로 바꾼다.</p><p>git restore --source=HEAD^ --staged -- 파일경로/파일이름</p><p>하고 나면&nbsp;</p><p>git status 에 staged 된거랑 수정내용이 반영되어진 unstaged된거가 있다.</p><p>지울놈은 unstage된넘.(즉, 아래빨간놈)</p><p>git restore 파일경로/파일이름</p><p>하면 unstage상태에서 빠지고,&nbsp;</p><p>git rebase --continue&nbsp;</p><p>하면 git 가 해당 파일을 커밋에 유지할까 생각하다가 이커밋이전의 커밋하고 차이가 없으니까 커밋목록에서 제가한다.</p><p><br /></p>

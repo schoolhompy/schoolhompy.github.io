@@ -1,0 +1,13 @@
+---
+layout: post
+title: '60분만에 만나는 docker '
+date: '2018-02-13T18:52:00.003-08:00'
+author: schoolhompy
+tags:
+- docker
+modified_time: '2018-03-31T19:32:11.153-07:00'
+blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-6207342903977503017
+blogger_orig_url: https://yunhos.blogspot.com/2018/02/60-docker.html
+---
+
+http://www.pyrasis.com/book/DockerForTheReallyImpatient/Chapter05　&lt;-- 무료도서<br />https://www.slideshare.net/pyrasis/docker-fordummies-44424016<br /><br />-Docker 컨테이너 안에 가상 공간을 만들지마 ㄴ실행파일을 호스트에서 직접실행<br />-리눅스커널의 cgoups 와 namespace 가 제공하는 기술<br />-게스트 OS 가 필요없다. 라이브러리만 격리해서 사용도 가능.<br />-도커 의 패키지는 서비스운영에 필요한 서버 프로그램, 소스코드, 실행하일 묶은 형태<br />&nbsp;-컨터이너는 이미지르 실행한 상태?<br />&nbsp;-하나의 이미지로 여러 컨테이너를 만들수 있음.<br />-컴퓨터 라면 이미지는 실행파일, 컨테이너는 프로세서<br />-이미지에서 특정 바꾼 부분은 다른 이미지와 합쳐서 실행 가능<br />-설치<br />&nbsp;--리눅스 배포판 자동인식 하는 쉡 스크립트 제공<br />&nbsp; &nbsp;wget -q0- https://get.docker.com/ | sh<br />&nbsp;--우분투 에서 직접 설치<br />&nbsp; &nbsp;apt-get update<br />&nbsp; &nbsp;apt-get install odcker.io<br />&nbsp; &nbsp;ln -sh /usr/bin/docker.io /usr/local/bin/docker<br />&nbsp; &nbsp;이제 /usr/bin/docker.io 실행파일을 /usr/local/bin/docker 로 사용.<br />&nbsp;--Redhat 이라면<br />&nbsp; &nbsp;yum install docker-io<br />&nbsp; &nbsp;docker start<br />-사용<br />&nbsp;--이미지 받기<br />&nbsp; &nbsp;docker pull 이미지이름:태그 : 이미지 가져오기<br />&nbsp; &nbsp;docker images : 이미지 보기 , 같은 이미지도 태그에 따라 다름.<br />&nbsp; &nbsp;docker run -i -t --name hello ubuntu /bin/bash :&nbsp; ubuntu 이미지원본을 가지고 컨테이너르 생성하여 /bin/bash 실행<br />&nbsp; &nbsp; &nbsp; *** 이때 /bin/bash 를 실행했기때문에 exit 해서 빠져나오면 컨테이너가 정지됨.<br />&nbsp; &nbsp;docker exec -it 실행중인컨터이너 bash&nbsp; &nbsp; : bash 접속. exex 는 yum 명령등으로 패키지르 설치하거나 데몬 실행시 쓰임.<br />-Docker 생성 **<br />&nbsp;--1.mkdir docker-test, cd docker-test<br />&nbsp;--2.Docker 파일 작성..<br />&nbsp; &nbsp; &nbsp;FROM ubuntu:14.04 # 어떤이미지로 어떤 태그 기반으로 할건지 지정<br />&nbsp; &nbsp; &nbsp;MAINTAINER Foo Bar foor@bar.com #메인테이너 정보<br />&nbsp; &nbsp; &nbsp;...<br />&nbsp; &nbsp; &nbsp;RUN apt-get update, install nginx, conf 파일 복사 등..이미지 생성시 필요한 단계 지정<br /><br />&nbsp; &nbsp; &nbsp;VOLUME ["/data/", "/etc/nginx/site-enabled", "/var/log/nginx"] #호스트와 공유할 디럭토리<br /><br />&nbsp; &nbsp; &nbsp;CMD ["nginx"] # 컨터이너가 시작되었을때 실핼할 파일 스크립트<br /><br />&nbsp; &nbsp; &nbsp;EXPOSE 80<br />&nbsp; &nbsp; &nbsp;EXPOSE 443 # 연결포트<br /><br />&nbsp;--3.Docker 빌드<br />&nbsp; &nbsp; docker build --tag hello:0.1 .<br />&nbsp; &nbsp; 이로서 이미지가 생성됨.<br />&nbsp;--4.Docker 실행<br />&nbsp; &nbsp; docker run --name hello-nginx -d -p 80:80 -v /root/data:/data hello:0.1<br />-boot2docker<br />&nbsp; 가상머신안에 도커를 실행한것.이므로 로스트IP 로는 nginx 에 바로 접속 불가.<br />&nbsp; 즉 아이피틑 boot2docker 의 아이피.<br /><div><br /></div>

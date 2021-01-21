@@ -1,0 +1,13 @@
+---
+layout: post
+title: 'Slack 에 슬래시 커맨드(/명령한다 , /밥줘..) 사용하기 '
+date: '2020-07-01T19:21:00.001-07:00'
+author: schoolhompy
+tags:
+- 슬래시커맨드
+modified_time: '2020-07-01T19:22:19.733-07:00'
+blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-9020130816513059893
+blogger_orig_url: https://yunhos.blogspot.com/2020/07/slack.html
+---
+
+<div><div>Heroku 는 한개 정도는 공짜니까 단순 응답용 앱을 만들어 슬랙에서 슬래시 커맨드 요청시 자동응답하게 한다.</div><div><br /></div><div>1.일단 헤로쿠 가입</div><div>2.좀편하게 쓸라면 Heroku CLI 설치</div><div>3.일단 헤로쿠 사이트에서 앱을 만든다.</div><div>4.컴터의 프롬프트에서 heroku git:clone -a slackresponsor 등의 명령어로 아까 만든 앱이름을 지정한다.</div><div>5.해당폴더에서 npm설치, package.json설정</div><div><br /></div><div>package.json</div><div>{</div><div>&nbsp; "name": "xxx",</div><div>&nbsp; "description": "",</div><div>&nbsp; "version": "1.0.0",</div><div>&nbsp; "main": "src/index.js",</div><div>&nbsp; "scripts": {</div><div>&nbsp; &nbsp; "start": "node ./src",</div><div>&nbsp; &nbsp; "test": "standard"</div><div>&nbsp; },</div><div>&nbsp; "author": {},</div><div>&nbsp; "bugs": {},</div><div>&nbsp; "dependencies": {</div><div>&nbsp; &nbsp; "body-parser": "^1.15.0",</div><div>&nbsp; &nbsp; "express": "^4.13.4"</div><div>&nbsp; },</div><div>&nbsp; "keywords": [</div><div>&nbsp; &nbsp; "xxx"</div><div>&nbsp; ],</div><div>&nbsp; "license": "MIT",</div><div>&nbsp; "engines": {</div><div>&nbsp; &nbsp; "node": "6.11.1"</div><div>&nbsp; }</div><div>}</div><div><br /></div><div>src/index.js</div><div><br /></div><div>'use strict'</div><div><br /></div><div>const express = require('express')</div><div>let app = express()</div><div><br /></div><div>app.get('/', (req, res) =&gt; { res.send('뭐뭐뭐') })</div><div><br /></div><div>const PORT = process.env.PORT || 3000;</div><div><br /></div><div>app.listen(PORT, (err) =&gt; {</div><div><br /></div><div>})</div><div><br /></div><div>6.별도로 슬랙하고 연동하고 싶다면 slack 모듈을 추가해서 필요한 작업한다.</div><div>7.일단 작업한거 push (git push heroku master) 하면 자동으로 서버가 구동</div><div>8.heroku open 하면 사이트 열림</div><div>9.슬랙 슬래시커맨드 사이트에서 해당 주소 지정 해서 생성</div><div>10.슬랙에서 /응답해 등등 치면 헤로쿠서버에 지정했던 응답이 슬랙에 표시</div><div><br /></div><div>무료.무료.무료</div></div><div><br /></div>참고<div><br /></div><div><a href="https://blog.heroku.com/how-to-deploy-your-slack-bots-to-heroku">https://blog.heroku.com/how-to-deploy-your-slack-bots-to-heroku</a></div><div><br /></div><div><a href="https://devcenter.heroku.com/articles/nodejs-support#versions">https://devcenter.heroku.com/articles/nodejs-support#versions</a></div>

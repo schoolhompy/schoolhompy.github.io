@@ -1,0 +1,13 @@
+---
+layout: post
+title: this 에 대한 심플예제1
+date: '2015-03-01T11:54:00.001-08:00'
+author: schoolhompy
+tags:
+- javascript
+modified_time: '2017-06-25T02:22:52.559-07:00'
+blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-7765127416272247611
+blogger_orig_url: https://yunhos.blogspot.com/2015/03/this-1_1.html
+---
+
+-  this  의 범위를 이용하여 공유변수등을 만들때<br/><br/>obj 의 this 는 obj2,obj3 에서 사용될 때  호이스트 규칙에 의해 자신 을 포함하는 객체가 된다.<br/><br/>var obj={<br/>hello:function(){<br/>return "hi,"+this.username;<br/>},<br/>username:"hehe"<br/>};<br/>var obj2={<br/>hello:obj.hello,<br/>username:"taeho"<br/>};<br/>var obj3={<br/>hello:obj.hello,<br/>username:"yejin"<br/>};<br/>console.log(obj2.hello());<br/>console.log(obj3.hello());

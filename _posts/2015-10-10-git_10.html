@@ -1,0 +1,13 @@
+---
+layout: post
+title: Git 분산관리 버젼 시스템 - 인사이트
+date: '2015-10-10T21:49:00.001-07:00'
+author: schoolhompy
+tags:
+- 형상관리툴
+modified_time: '2017-06-25T02:22:53.345-07:00'
+blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-2537906867708337462
+blogger_orig_url: https://yunhos.blogspot.com/2015/10/git_10.html
+---
+
+1.저장소( repository) : 사용자가 변경한 모든 내용을 추적하는 공간.<br/><br/>2.저장소 만들기 :<br/><ul><br/>	<li>mkdir mywebsite</li><br/>	<li>cd mywebsite</li><br/>	<li>git init</li><br/>	<li>후에</li><br/>	<li>git add index.html</li><br/>	<li>git commit -m "hehe first website"</li><br/></ul><br/>3.branch  만들기<br/><br/>git branch RB_1.0 master<br/><br/>master 브랜치에서 RB_1.0  라는 브랜치를 생성한다. (서브비젼에서는 트렁크라고 했음)<br/><br/>4.원격저장소 복제해오기<br/><br/>git clone http://mysite myclonesite<br/><br/>5.파일무시하기<br/><br/>.gitignore : 저장소및 자신의 컴퓨터에서 파일무시<br/><br/>.git/info/exclude : 자신의 저장소에서만 파일무시<br/><br/>6.브랜치 활용<br/><br/>-깃에서는 모든게 브랜치 로 간주된다.<br/><br/>브랜치는 새로운 기능을 잠깐 만들어보려고 할떄나, 검증전의 새로운 기능추가, 리팩토링,버그수정 등의 별도의 과정을 하고자 할때 주로 생성한다. 새로운 기능은 베타버젼일수있으며 검증이 끝나면 다시 마스터와 통합하여 릴리즈 버젼으로 만들어 배포하는 수순이다.<br/><br/>git checkout -b newAlgo master<br/><br/>마스터로 부터 새로운 알고브랜치를 만든다.<br/><br/>6.1 병합<br/><br/>newAlgo 체크아웃상태에서<br/><br/>git add test.html -&gt; git commit -m "for test" 하면 master 브랜치에서는 존재하지않는다.<br/><br/>따라서 합치고자 하는 브랜치로 전환해야 한다.<br/><br/>git checkout master<br/><br/>git merge --squash newAlgo<br/><br/>로 아까 추가한 것을  master 에 합친다.( squash 는 모든 커밋을 하나의 커밋으로 밀어넣는다.)<br/><br/>6.2 브랜치의 충돌<br/><br/>"브랜치1" 과 "브랜치2"를 먼저 추가후 "브랜치1"에서 내용을 추가한후<br/><br/>"브랜치2"에서 따로 내용 추가한다음<br/><br/>1의 파일을 다시 수정하고<br/><br/>git commit -&gt; git checkout "브랜치1" -&gt; git merge "브랜치2" 하면 충돌이 일어난다.<br/><br/>&lt;&lt;&lt; : 현재 브랜치<br/><blockquote>&gt;&gt; : 다른브랜치</blockquote><br/>=== : 구분자<br/><br/>이때는 그냥 머지툴로 충돌 확인하고 적절한 수정을...쿨럭....같은 내용중에 어떤거를 남길수 판단은 인간이.<br/><br/>7.커밋 돌려놓기<br/><br/>git revert -n 5401434 -&gt; git commit -m "revert"<br/><br/>8.원격 저장소를 이용<br/><br/>8.1 push<br/><br/>git origin mybranch:master 해서 로컬의 특정 브랜치를 원격에 저장할수 있다.<br/><br/>원격저장소에 대한 별칭은<br/><br/>git remote add 이름 저장소URL 이다.<br/><br/>git pull thkim HEAD 하면 별칭된 주소에서 가져온다.

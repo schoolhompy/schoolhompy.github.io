@@ -1,0 +1,13 @@
+---
+layout: post
+title: PostgreSQL 요약
+date: '2015-09-14T05:53:00.001-07:00'
+author: schoolhompy
+tags:
+- pgsql
+modified_time: '2017-06-25T02:22:53.308-07:00'
+blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-4669254428836721517
+blogger_orig_url: https://yunhos.blogspot.com/2015/09/postgresql_14.html
+---
+
+-coffemix.net  하위 문서<br/><br/>http://coffeenix.net/doc/db/pgsql_sql_091a/pgsql_sql_091a-1.html<br/><br/>http://devx.tistory.com/entry/PostgreSQL%EC%9D%98-%EC%9E%A5%EC%A0%90-%EB%B0%8F-%ED%8A%B9%EC%A7%95<br/><br/>-아래는 요약-<br/><br/>어느 DBMS에나 있는 query optimizer를 보자. rule base든 cost base든 이것도 얘기 꺼내면 시끌시끌 하지만 pgsql의 geqo(genetic query optimizer)는 어쨌든 뛰어난 옵티마이저이다.<br/>단일 테이블 select 아무리 빠르면 뭐하나? 테이블 조인 서너개 하면 디스크 처음부터 끝까지 다 긁는다.<br/>...<br/>pgsql은 내가 아는 한 가장 똑똑한 옵티마이저를 가졌다.<br/><br/>다른 강력한 기능들.<br/><br/>하나의 row가 하나의 데이터가 된다면 어떨까?<br/>composite type이라는 데이터 타입은 하나의 row처럼 여러 종류의 데이터 타입들을 하나의 필드에 넣을 수 있게 해준다. C의 구조체를 하나의 데이터 타입처럼 다루는 것이다.<br/><br/>pgsql이 지원하는 모든 데이터 타입은 [] 만 붙여주면 배열 타입으로 변한다.<br/><br/>리플리케이션.<br/><br/>pgpool-II: pgpool의 차세대(?) 버전으로 최대 128개의 pgsql을 리플리케이션 해주고 그리드형태의 분산 처리가 된다. select * from table idx between 0 and 100; 이런 쿼리가 들어오면 10대의 pgsql에 0..10, 11..20, 21..30 처럼 쿼리를 쪼개서 병렬 처리하게 한다. 보통의 클러스터보다 훨씬 좋은거다.

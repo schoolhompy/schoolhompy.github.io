@@ -1,0 +1,13 @@
+---
+layout: post
+title: Cocos2dx 컴파일(디버그개발)시 빠르게
+date: '2017-06-25T01:38:00.000-07:00'
+author: schoolhompy
+tags:
+- cocos2dx
+modified_time: '2017-06-25T02:22:54.979-07:00'
+blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-5135162425955757539
+blogger_orig_url: https://yunhos.blogspot.com/2017/06/cocos2dx.html
+---
+
+http://nalsil.tistory.com/m/51<br/><br/>요기가 포인트.<br/><br/>5. 프로젝트 속성에서 "구성 속성&gt;링커&gt;일반&gt;추가 라이브러리 디렉터리"에 이전에 빌드한 output 폴더를 추가<br/><br/>-. cocos2d-x-3.13\build\Debug.win32<br/><br/>&nbsp;<br/><br/>6. "구성 속성&gt;링커&gt;입력&gt;추가 종속성"에  "libcocos2d.lib" 를 추가한다.<br/><br/>&nbsp;<br/><br/>7. "구성 속성&gt;빌드 이벤트&gt;빌드 후 이벤트"에 다음 내용을 추가한다.<br/><br/>-. copy  cocos2d-x-3.13\build\Debug.win32\*.dll  $(OutDir)<br/><br/>&nbsp;<br/><br/>&nbsp;<br/><br/>&nbsp;

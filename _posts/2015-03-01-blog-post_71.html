@@ -1,0 +1,13 @@
+---
+layout: post
+title: 고차함수
+date: '2015-03-01T12:05:00.001-08:00'
+author: schoolhompy
+tags:
+- javascript
+modified_time: '2017-06-25T02:22:52.573-07:00'
+blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-3683367645320799400
+blogger_orig_url: https://yunhos.blogspot.com/2015/03/blog-post_71.html
+---
+
+익명함수를  이용한  고차함수<br/><br/>------------<br/><br/>var a=[3,1,4,5,6].sort(function(x,y){<br/>if(x&lt;y) {return -1;}<br/>if(x&gt;y) {return 1;}<br/>return 0;<br/>});<br/>console.log(a);<br/><br/>----------------------<br/><br/>맵을 이용한 고차함수<br/><br/>var a=["Fred","Willar","Peblle"].map(function(name){<br/><br/>return name.toUpperCase();<br/>});<br/>console.log(a);<br/><br/>----------------------<br/><br/>callback 이용한 고차함수<br/><br/>var aIndex="a".charCodeAt(0);<br/>function buildString(n,callback){<br/>var result="";<br/>for(var i=0;i&lt;n;i++){<br/>result +=callback(i);<br/>}<br/>return result;<br/>}<br/><br/>var alphabet=buildString(26,function(i){<br/>return String.fromCharCode(aIndex+i);<br/>});<br/>var digit=buildString(10,function(i){<br/>return i;<br/>});<br/>console.log(alphabet);<br/>console.log(digit);

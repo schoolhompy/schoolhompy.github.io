@@ -1,0 +1,12 @@
+---
+layout: post
+title: 자바스크립트 성능개선 참고
+date: '2018-04-23T19:40:00.002-07:00'
+author: schoolhompy
+tags: 
+modified_time: '2018-04-24T22:12:50.472-07:00'
+blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-795709869458269477
+blogger_orig_url: https://yunhos.blogspot.com/2018/04/blog-post_7.html
+---
+
+<br /><br />High Performance JavaScript 2011 from Nicholas Zakas<br />https://www.slideshare.net/nzakas/high-performance-javascript-2011<br />자바 스크립트 속도 개선.<br /><br />1.필요한 시점에 동적으로 파일을 로딩한다. 으잉 ? 진짜로 ?<br />만일 바로 태그에 넣으면 로딩되는 시간까지 렌더링이 기다리지만<br />아래처럼하면, 일단 html 표시됨,.<br />77 페이지 참고.<br />&lt;script&gt;<br />var script = document.createElement("script"),body;<br />script.type="text/javascrpit"<br />scrpit.src= "foo.js"<br />body.insertBefore(script,body.firstChild)<br />&lt;/script&gt;<br /><br />2.defer 를 사용하면 일단 다운로드 하고 UI 업데이트 될때 실행함.<br />&lt;script defer src="ff.js"&gt;&gt;<br /><br />3.for 문에서 append 쓰는 reflow 가 발생.<br />-detach, display, decumentFragment 를 사용해<br /><br />4.style 을 각각주면 repaint 가 발생<br />모아서 한번에 줄수 있또록.<br /><br /><br /><br />성능 덕후를 위한 javascript 패턴<br />https://joshuajangblog.wordpress.com/2016/11/21/javascript-coding-pattern-for-junior-web-developer/

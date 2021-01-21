@@ -1,0 +1,12 @@
+---
+layout: post
+title: C# 배열을 다루는 간단한 방법 Tip
+date: '2018-05-04T03:25:00.001-07:00'
+author: schoolhompy
+tags: 
+modified_time: '2018-05-04T03:25:10.575-07:00'
+blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-372220556288422715
+blogger_orig_url: https://yunhos.blogspot.com/2018/05/c-tip.html
+---
+
+<br />int[] ar = { 1,2,3}<br /><br />배열을 축소(특정 값만 있는 배열을 빼고 다시 만들기)<br />ar = ar.Where(c =&gt; c != 2).ToArray();<br />foreach...<br /><br />배열을 확대<br />ar = ar.Concat(new int[] {4}).ToArray();<br /><br /><br /><br />배열에 중간 요소 삽입<br />ar = ar.Take(1).Concat(new int[] {2}).Concat(ar.Skip(1)).ToArray();&nbsp; &lt;-- 머이런 언어가..ㅋ 제이쿼리냐

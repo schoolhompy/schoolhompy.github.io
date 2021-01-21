@@ -1,0 +1,13 @@
+---
+layout: post
+title: 지연변수 스코프를 만들기위해 즉시 실행함수 표현식 사용법
+date: '2015-03-01T11:46:00.001-08:00'
+author: schoolhompy
+tags:
+- javascript
+modified_time: '2017-06-25T02:22:52.501-07:00'
+blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-9208676250870923721
+blogger_orig_url: https://yunhos.blogspot.com/2015/03/blog-post_66.html
+---
+
+반복문등에서 클로져를  이용하 여 지역변수를 참조하려할때, 클로저에서 변수값을 복사가 아닌 참조를 ㅎㅏ는 특성때 문에 반복 문의 마지막 변수만 참조하는 문제점이 있다.<br/><br/>--------------<br/><br/>function wrapElements(a){<br/>var result=[];<br/>for(var i=0,n=a.length;i&lt;n;i++){<br/>result[i]=function(){return a[i];};<br/>}<br/><br/>}<br/>var wrapped=wrapElements([10,20,30]);<br/>var f=wrapped[0];<br/>f();<br/><br/>이때,클로 져를  즉시실행함수로 감싸서  즉 시 실행함수에서  별도의 변 수 에 반복문의 반복 변수등을 복사저장한다음 클로져를 사용하면 된다.<br/><br/>function wrapElements(a){<br/>var result=[];<br/>for(var i=0,n=a.length;i&lt;n;i++){<br/>//즉시실행함수에서 i 값을 j 로 복제한다.<br/>(function(j){<br/>//result[i] 값이 객체로 온다는 것 주의<br/>result[i]=function(){return a[j];};<br/>})(i);<br/><br/>}<br/>return result;<br/><br/>}<br/>var wrapped=wrapElements([10,20,30]);<br/>//리턴<br/>var f=wrapped[1];<br/>console.log(f());

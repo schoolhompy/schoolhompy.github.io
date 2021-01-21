@@ -1,0 +1,13 @@
+---
+layout: post
+title: 두 박스 간의 겹침 % 계산하는 로직- 따온거임.
+date: '2014-10-07T22:16:00.001-07:00'
+author: schoolhompy
+tags:
+- 게임만들기
+modified_time: '2017-06-25T02:22:52.320-07:00'
+blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-5669426307144141479
+blogger_orig_url: https://yunhos.blogspot.com/2014/10/blog-post_38.html
+---
+
+http://forum.ragezone.com/f144/total-overlapping-percent-2-rectangles-895041/<br/><br/>-func-<br/>function rectCollisionPercentage(argRectA,argRectB){<br/>/*<br/>* argRectA = {x:0, y:0, r width:100, height:100};<br/>* argRectB ={x:0, y:0, r width:100, height:100};<br/>*/<br/>var r1 = {<br/>left:argRectA.x,<br/>top:argRectA.y,<br/>right:argRectA.x+argRectA.width-1,<br/>bottom:argRectA.y+argRectA.height-1,<br/>width:argRectA.width,<br/>height:argRectA.height<br/>};<br/><br/>var r2 = {<br/>left:argRectB.x,<br/>top:argRectB.y,<br/>right:argRectB.x+argRectB.width-1,<br/>bottom:argRectB.y+argRectB.height-1,<br/>width:argRectB.width,<br/>height:argRectB.height<br/>};<br/><br/>// console.log(r1,r2);<br/><br/>var left = r1.left &gt;= r2.left ? r1.left : r2.left;<br/>var top = r1.top &gt;= r2.top ? r1.top : r2.top;<br/>var right = r1.right &gt;= r2.right ? r2.right : r1.right;<br/>var bottom = r1.bottom &gt;= r2.bottom ? r2.bottom : r1.bottom<br/><br/>var overlapHeight = bottom - top;<br/>var overlapWidth = right - left;<br/><br/>var r2Area = r2.height * r2.width;<br/>var overlapArea = overlapHeight * overlapWidth;<br/><br/>var oPercent  = (Math.round((overlapArea / r2Area ) * 100)) * 1.414;<br/>console.log(oPercent);<br/>return oPercent;<br/><br/>}<br/><br/>-use-<br/><br/>opatrans=rectCollisionPercentage(<br/><br/>{ x:boundOutBoxContainer.x,<br/>y:boundOutBoxContainer.y,<br/>width:mainAblumViewFlipper.getOutBoundWH().w,<br/>height:mainAblumViewFlipper.getOutBoundWH().h } ,<br/><br/>{ x:( arg_newBitmapConteiner.x + ((vvAlbumList.container.getChildByName("vAlbumSubList").x)) ),<br/>y:arg_newBitmapConteiner.y,<br/>width:mainAblumViewFlipper.getInBoundBaseWH().w,<br/>height:mainAblumViewFlipper.getInBoundBaseWH().h }<br/><br/>);

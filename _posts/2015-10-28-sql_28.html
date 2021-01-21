@@ -1,0 +1,13 @@
+---
+layout: post
+title: 실전사례로 보는 SQL튜닝방법-인사이트
+date: '2015-10-28T18:25:00.001-07:00'
+author: schoolhompy
+tags:
+- 데이버베이스
+modified_time: '2017-06-25T02:22:53.616-07:00'
+blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-8376354485194260877
+blogger_orig_url: https://yunhos.blogspot.com/2015/10/sql_28.html
+---
+
+SQL 튜닝 배우자.<br/><br/>정규화 반정규화도 튜닝 작업의 일환이다.<br/><br/>인덱스만 잘타도 기본적인 튜닝작업이 된다.<br/><br/>이 책은 인덱스로 시작해서 인덱스로 끝난다.ㅋ<br/>실전사례는 많아서 좋다.<br/><br/>-옵티마이져<br/><br/>Parsing 에 대한 적절한 실행계획을 세우는것.<br/><br/>:Soft Parsing : SQL을 실행한 적이 있는지 메모리에서 검사해서 기존방식대로 실행하여 처리는것.<br/>Hard Parsing : SQL에서 사용하고 있는 객체들에 대한 접근권한체크후 어떤 방식으로 처리할것인지 실행계획을 세우는 것<br/><br/>-옵티마이져 종류<br/><br/>1.규칙기반 (Rule Base Optimizer , ROB): 특정 규칙을 기반으로 실행계획을 세우는 방법<br/>:Rank(1~15) 에 정해진 우선순위대로 규칙을 적용한다.<br/>-힌트를 사용할수 없다.<br/>-HASH JOIN 을 사용할수 없다.<br/>-Partitioned table, iot, reverse key index , function based index등은 사용할수없다.<br/>이러한 제약때문에 Oracle10g 부터는 규칙기반 옵티마이져를 사용하지 않는다.<br/><br/>2.비용기반 (Cose Base Optimize , COB): SQL 의 비용을 계산해서 최소의 비용(cost) 로 처리할수 있는 계획을 세우는 방법<br/><br/>---<br/><br/>&nbsp;<br/><br/>---<br/><br/>힌트의 사용<br/>임시로 적용해 보는 몇가지 힌트를 통해 튜닝에 도움을 줄수있다.<br/><br/>/*+ ALL_ROWS */ : 최소한의 자원을 최대로 빨리 가져오는 실행계획을 세운다.<br/>/*+ INDEX(table_name index_name)*/ : 특정 인덱스를 사용하거나,  NO_INDEX 를 통해 인덱스를 사용하지 않는 결과를 본다.<br/>( /*+ INDEX_ASC(table_name index_name)*/ 와 /*+ INDEX_DESC(table_name index_name)*/) 도 있음.<br/>/*+ FULL(table_name) */ : FULL SCAN  하고자 할때 쓰인다. Index scan 하고의 비교 검증용이다.<br/>/*+ INDEX_FFS(table_name index_name) */ : index fast full scan 을 유도한다. 컬럼들이 모두 인덱스에 있을때, 인덱스만으로도 검색이 가능한경우.<br/><br/>/*+ ORDERRED */ : 무조건 from 절에서 나열한 테이블 순서대로 처리를 진행한다. join 쿼리의 경우 순서도 영향을 끼지기 때문이다.<br/>/*+ LEADING(table1 table2...) */ : 명시된 테이블 순서대로 처리한다.<br/><br/>/*+ USE_NL(table1 table2...) */ : nesteed loop join 을 사용한다.(!= NO_USE_NL)<br/>/*+ USE_HASH(table1 table2...) */ : hash join 을 사용한다.<br/><br/>/*+ USE_CONCATE */ :조건절의 OR 를  UNION ALL 형식으로 변형하여 실행한다.(!= NO_EXPAND)<br/>/*+ MERGE */ : 뷰가 메인쿼리와 merge 되지 않을때 강제로 merge 한다. (!= NO_MERGE)<br/>/*+ UNNEST */ : 서브쿼리와 메인쿼리를 하나의 조인형태로 한다.(!= NO_UNNEST)
