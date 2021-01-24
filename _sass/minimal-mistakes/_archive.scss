@@ -8,8 +8,8 @@
 
   @include breakpoint($large) {
     float: left;
-    width: calc(100% - #{$right-sidebar-width-narrow});
-    padding-right: $right-sidebar-width-narrow;
+    width: calc(100% - #{$left-sidebar-width});
+    padding-right: $left-sidebar-padding;
   }
 
   @include breakpoint($x-large) {
@@ -452,8 +452,4 @@
 	.feature__wrapper {
 		display: inline-block;
 	}
-}
-
-.archive_month_list {
-  float:left;
 }
