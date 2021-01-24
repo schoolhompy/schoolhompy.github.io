@@ -4,8 +4,10 @@ title: NuxtJs, VueJs 로 프론트엔드 구축시 정리했던 자료
 date: '2020-10-17T20:15:00.002-07:00'
 author: schoolhompy
 tags:
-- nuxtjs
-- vuejs
+- Nuxtjs
+- Vue.js
+categories:
+- FRONTEND
 modified_time: '2020-10-17T20:15:14.475-07:00'
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-81984680646368243
 blogger_orig_url: https://yunhos.blogspot.com/2020/10/nuxtjs-vuejs.html

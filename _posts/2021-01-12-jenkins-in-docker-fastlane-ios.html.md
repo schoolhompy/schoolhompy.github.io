@@ -3,9 +3,11 @@ layout: post
 title: Jenkins in Docker, Fastlane 을 젠킨스 노드를 통해  IOS빌드하기
 date: '2021-01-12T04:57:00.003-08:00'
 author: schoolhompy
+categories:
+- DEVOPS
 tags:
 - docker
-- jenkins
+- Jenkins
 - ios build
 - fastlane
 modified_time: '2021-01-12T05:32:13.761-08:00'

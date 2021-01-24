@@ -3,9 +3,11 @@ layout: post
 title: Jenkins 에 slack연동
 date: '2020-09-26T20:24:00.002-07:00'
 author: schoolhompy
+categories:
+- DEVOPS
 tags:
 - jenkins
-- slack
+- Slack
 modified_time: '2020-09-26T20:24:32.378-07:00'
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-4182364502729704530
 blogger_orig_url: https://yunhos.blogspot.com/2020/09/jenkins-slack.html

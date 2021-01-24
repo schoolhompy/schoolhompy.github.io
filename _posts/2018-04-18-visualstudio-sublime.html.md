@@ -4,7 +4,7 @@ title: VisualStudio 꿀팁, sublime 처럼 전체소스보기, 메쏘드정의�
 date: '2018-04-18T19:08:00.002-07:00'
 author: schoolhompy
 tags:
-- C#
+- "C#"
 modified_time: '2018-04-18T19:08:23.236-07:00'
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-4717317595066444708
 blogger_orig_url: https://yunhos.blogspot.com/2018/04/visualstudio-sublime.html

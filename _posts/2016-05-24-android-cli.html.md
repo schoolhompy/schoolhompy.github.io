@@ -3,8 +3,11 @@ layout: post
 title: android cli 서명
 date: '2016-05-24T06:16:00.000-07:00'
 author: schoolhompy
+categories:
+- MOBILE DEV
 tags:
-- 안드로이드
+- android
+
 modified_time: '2017-06-25T02:22:54.503-07:00'
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-6588213097777292781
 blogger_orig_url: https://yunhos.blogspot.com/2016/05/android-cli.html

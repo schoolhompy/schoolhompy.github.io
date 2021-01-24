@@ -3,8 +3,11 @@ layout: post
 title: Android Decompile 해서 다시 apk 로 만들어보기
 date: '2019-10-11T00:46:00.001-07:00'
 author: schoolhompy
+categories:
+- MOBILE DEV
 tags:
-- 안드로이드
+- android
+
 modified_time: '2019-10-11T00:46:37.896-07:00'
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-2539360412591276027
 blogger_orig_url: https://yunhos.blogspot.com/2019/10/android-decompile-apk.html

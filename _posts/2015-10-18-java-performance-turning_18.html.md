@@ -3,6 +3,8 @@ layout: post
 title: JAVA PERFORMANCE TURNING
 date: '2015-10-18T17:03:00.001-07:00'
 author: schoolhompy
+categories:
+- BACKEND
 tags:
 - JAVA
 modified_time: '2017-06-25T02:22:53.470-07:00'

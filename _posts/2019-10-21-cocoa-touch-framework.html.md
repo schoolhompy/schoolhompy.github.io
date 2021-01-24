@@ -3,8 +3,10 @@ layout: post
 title: Cocoa Touch Framework 을 이용해서 공통모듈 만들기
 date: '2019-10-21T00:53:00.000-07:00'
 author: schoolhompy
+categories:
+- MOBILE DEV
 tags:
-- "--아이폰"
+- ios
 modified_time: '2019-10-21T06:10:07.115-07:00'
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-7293300092995992123
 blogger_orig_url: https://yunhos.blogspot.com/2019/10/cocoa-touch-framework.html

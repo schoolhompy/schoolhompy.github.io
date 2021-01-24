@@ -3,10 +3,11 @@ layout: post
 title: OpenSTF 를 mac os 의 docker 에서 실행해서 Android 단말테스트 과정을 좀더 쉽게 하자
 date: '2021-01-20T23:24:00.002-08:00'
 author: schoolhompy
+categories:
+- DEVOPS
 tags:
 - docker
-- adb
-- openstf
+- OpenSTF
 - android
 modified_time: '2021-01-20T23:24:50.883-08:00'
 thumbnail: https://1.bp.blogspot.com/-nWk9j-gR17k/YAkrg_DaA_I/AAAAAAABGWI/sN5g2-gFKdYWp8lIqoXeNioC121eLMlfgCLcBGAsYHQ/s72-c/Screen%2BShot%2B2021-01-21%2Bat%2B16.18.32.png

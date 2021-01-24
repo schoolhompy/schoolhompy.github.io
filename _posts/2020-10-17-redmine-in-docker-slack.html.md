@@ -3,9 +3,11 @@ layout: post
 title: Redmine in Docker 에서 Slack 연동하기
 date: '2020-10-17T21:15:00.001-07:00'
 author: schoolhompy
+categories:
+- DEVOPS
 tags:
-- redmine
-- slack
+- Redmine
+- Slack
 modified_time: '2020-10-17T21:15:05.394-07:00'
 thumbnail: https://1.bp.blogspot.com/-hJtamU25kyg/X4vAi-eLYLI/AAAAAAABFeY/1zyLy45D54ULHPr5BhxoLKiy9O1QsxwsACLcBGAsYHQ/s72-c/Screen%2BShot%2B2020-10-18%2Bat%2B13.11.05.png
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-1086982596604259859

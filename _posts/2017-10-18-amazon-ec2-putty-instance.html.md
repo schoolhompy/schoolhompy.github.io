@@ -3,6 +3,8 @@ layout: post
 title: Amazon EC2 - putty 를 이용하여 Instance 접속하기
 date: '2017-10-18T19:41:00.000-07:00'
 author: schoolhompy
+categories:
+- DEVOPS
 tags:
 - aws
 modified_time: '2017-10-18T19:41:04.876-07:00'

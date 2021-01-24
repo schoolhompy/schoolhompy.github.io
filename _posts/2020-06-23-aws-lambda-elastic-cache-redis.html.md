@@ -3,9 +3,11 @@ layout: post
 title: AWS + LAMBDA + (Elastic cache) REDIS 연동 방법
 date: '2020-06-23T08:32:00.001-07:00'
 author: schoolhompy
+categories:
+- DEVOPS
 tags:
-- redis
-- elastic cache
+- aws Redis
+- AWS Elastic Cache
 - aws
 modified_time: '2020-06-23T08:32:11.372-07:00'
 thumbnail: https://1.bp.blogspot.com/-ypwa5WDa_L0/XvIaM8WsGxI/AAAAAAABD34/pepI6xJr5JU70cvZbRhGsFu2TDUIGwe9ACLcBGAsYHQ/s72-c/s1.png

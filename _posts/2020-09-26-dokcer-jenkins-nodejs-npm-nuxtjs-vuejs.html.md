@@ -3,11 +3,15 @@ layout: post
 title: Dokcer 내의 Jenkins 에서 nodejs , npm , nuxtjs, vuejs  빌드하기
 date: '2020-09-26T20:15:00.002-07:00'
 author: schoolhompy
+categories:
+- DEVOPS
 tags:
 - docker
 - nodejs
-- jenkins
-- nuxtjs
+- Jenkins
+- Nuxtjs
+categories:
+- FRONTEND
 modified_time: '2020-09-26T22:16:08.742-07:00'
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-3255849670027883946
 blogger_orig_url: https://yunhos.blogspot.com/2020/09/dokcer-jenkins-nodejs-npm-nuxtjs-vuejs.html

@@ -3,8 +3,10 @@ layout: post
 title: ios + fastlane 으로 ipa 파일 자동으로 만들기.
 date: '2021-01-11T04:07:00.004-08:00'
 author: schoolhompy
+categories:
+- MOBILE DEV
 tags:
-- ipa
+- ios
 - ios
 - fastlane
 modified_time: '2021-01-11T04:07:30.414-08:00'

@@ -3,6 +3,8 @@ layout: post
 title: SherlockFragment 에서 viewpager 를 이미지 갤러리로 활용한 방법입니다.
 date: '2013-12-05T19:20:00.001-08:00'
 author: schoolhompy
+categories:
+- BACKEND
 tags:
 - JAVA
 modified_time: '2017-06-25T02:22:51.014-07:00'

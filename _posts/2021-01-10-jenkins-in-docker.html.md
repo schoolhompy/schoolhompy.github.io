@@ -3,9 +3,11 @@ layout: post
 title: Jenkins in docker  , 젠킨스 도커 이미지 커스터마이징 하기
 date: '2021-01-10T01:58:00.000-08:00'
 author: schoolhompy
+categories:
+- DEVOPS
 tags:
 - docker
-- jenkins
+- Jenkins
 modified_time: '2021-01-10T01:58:01.818-08:00'
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-9172068062594628587
 blogger_orig_url: https://yunhos.blogspot.com/2021/01/jenkins-in-docker.html

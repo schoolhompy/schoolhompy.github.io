@@ -3,8 +3,9 @@ layout: post
 title: 'Amazon IAM 설정 (좀더 안정적인 인프라 운영) '
 date: '2017-10-18T18:52:00.000-07:00'
 author: schoolhompy
+categories:
+- DEVOPS
 tags:
-- ims
 - aws
 modified_time: '2017-10-18T18:52:00.068-07:00'
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-7274368686196674308

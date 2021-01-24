@@ -3,8 +3,11 @@ layout: post
 title: Android Enterprise Experience 안드로이드 엔터프라이즈 모드를 간단하게 경험해보게 해준다
 date: '2019-09-03T06:29:00.001-07:00'
 author: schoolhompy
+categories:
+- MOBILE DEV
 tags:
 - android
+
 modified_time: '2019-09-28T00:01:05.418-07:00'
 thumbnail: https://1.bp.blogspot.com/-ZrF4e0_NhSY/XW5nNv8EU1I/AAAAAAABBT8/tVvgJMHyFNIKnLfqcjtFMscTq2KP9-qfACLcBGAs/s72-c/Screen%2BShot%2B2019-09-03%2Bat%2B21.15.00.png
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-8389911611748373434

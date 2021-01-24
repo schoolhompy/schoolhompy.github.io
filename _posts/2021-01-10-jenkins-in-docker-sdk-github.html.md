@@ -3,11 +3,13 @@ layout: post
 title: Jenkins in Docker,  로컬 안드로이드 sdk 를 이용하여 github 프로젝트 빌드하기
 date: '2021-01-10T21:47:00.001-08:00'
 author: schoolhompy
+categories:
+- DEVOPS
 tags:
 - docker
 - android
-- jankins
-- github
+- Jenkins
+- Git etc.
 modified_time: '2021-01-20T03:59:45.076-08:00'
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-2096382097759565442
 blogger_orig_url: https://yunhos.blogspot.com/2021/01/jenkins-in-docker-sdk-github.html

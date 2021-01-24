@@ -5,6 +5,8 @@ date: '2020-06-28T21:42:00.003-07:00'
 author: schoolhompy
 tags:
 - cocos2dx
+categories:
+- GAME DEV
 modified_time: '2020-06-28T21:42:43.490-07:00'
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-5705038410789221971
 blogger_orig_url: https://yunhos.blogspot.com/2020/06/cocos2dx-40-mac-cocos-run-cmake.html

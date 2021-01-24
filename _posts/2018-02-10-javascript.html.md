@@ -4,7 +4,6 @@ title: JAVASCRIPT 유용한 함수들 -- 잘까먹거나 안썼던 것들
 date: '2018-02-10T21:08:00.000-08:00'
 author: schoolhompy
 tags:
-- front-end
 - javascript
 - reactjs
 modified_time: '2018-02-11T03:35:35.894-08:00'

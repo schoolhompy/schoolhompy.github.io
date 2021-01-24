@@ -3,6 +3,8 @@ layout: post
 title: 자바 유창하게 말하기 - Effective Java
 date: '2013-12-11T01:04:00.001-08:00'
 author: schoolhompy
+categories:
+- BACKEND
 tags:
 - JAVA
 modified_time: '2017-06-25T02:22:51.397-07:00'

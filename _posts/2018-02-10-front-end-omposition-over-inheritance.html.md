@@ -3,8 +3,10 @@ layout: post
 title: FRONT-END  omposition over inheritance
 date: '2018-02-10T20:40:00.002-08:00'
 author: schoolhompy
+categories:
+- BACKEND
 tags:
-- javascript
+- JAVAscript
 - reactjs
 modified_time: '2018-02-10T20:40:49.811-08:00'
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-2886964646748423558

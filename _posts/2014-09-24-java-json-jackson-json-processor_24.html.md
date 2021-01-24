@@ -3,6 +3,8 @@ layout: post
 title: Java JSON 처리 라이브러리 Jackson JSON Processor
 date: '2014-09-24T21:21:00.001-07:00'
 author: schoolhompy
+categories:
+- BACKEND
 tags:
 - JAVA
 modified_time: '2017-06-25T02:22:52.189-07:00'

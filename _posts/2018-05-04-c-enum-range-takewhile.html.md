@@ -4,7 +4,7 @@ title: C# Enum range takewhile 사용예
 date: '2018-05-04T02:19:00.001-07:00'
 author: schoolhompy
 tags:
-- C#
+- "C#"
 modified_time: '2018-05-04T02:19:20.305-07:00'
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-2071219645559387011
 blogger_orig_url: https://yunhos.blogspot.com/2018/05/c-enum-range-takewhile.html

@@ -3,6 +3,8 @@ layout: post
 title: java-programming-tips-best-practices-beginners
 date: '2017-01-08T18:06:00.000-08:00'
 author: schoolhompy
+categories:
+- BACKEND
 tags:
 - JAVA
 modified_time: '2017-06-25T02:22:54.806-07:00'

@@ -3,8 +3,10 @@ layout: post
 title: 스프링프레임워크 무료 동영상강좌 - inflearn.com
 date: '2017-07-09T09:56:00.002-07:00'
 author: schoolhompy
+categories:
+- BACKEND
 tags:
-- spring
+- Springboot
 modified_time: '2017-09-25T06:43:33.056-07:00'
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-7988342804039410199
 blogger_orig_url: https://yunhos.blogspot.com/2017/07/inflearncom.html

@@ -5,7 +5,8 @@ date: '2020-07-02T00:27:00.003-07:00'
 author: schoolhompy
 tags:
 - Vue.js
-- vuejs
+categories:
+- FRONTEND
 modified_time: '2020-07-29T21:21:24.873-07:00'
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-8770478467862745004
 blogger_orig_url: https://yunhos.blogspot.com/2020/07/vuejs-vscode.html

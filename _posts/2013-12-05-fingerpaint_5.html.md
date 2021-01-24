@@ -5,6 +5,8 @@ date: '2013-12-05T19:28:00.001-08:00'
 author: schoolhompy
 tags:
 - cocos2dx
+categories:
+- GAME DEV
 modified_time: '2017-06-25T02:22:51.095-07:00'
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-1770744330357777233
 blogger_orig_url: https://yunhos.blogspot.com/2013/12/fingerpaint_5.html

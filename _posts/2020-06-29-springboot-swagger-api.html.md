@@ -4,8 +4,8 @@ title: springboot 에 swagger 설치해서 api 확인하자
 date: '2020-06-29T05:28:00.001-07:00'
 author: schoolhompy
 tags:
-- swagger
-- springboot
+- Swagger
+- Springbootboot
 modified_time: '2020-07-30T23:49:15.510-07:00'
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-3988753058869736446
 blogger_orig_url: https://yunhos.blogspot.com/2020/06/springboot-swagger-api.html

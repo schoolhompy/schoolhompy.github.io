@@ -3,8 +3,10 @@ layout: post
 title: IOS 의  GCD ( Grand Central Dispatch) 로 쓰레드처리를 편하고 안전하게.
 date: '2019-10-21T06:03:00.000-07:00'
 author: schoolhompy
+categories:
+- MOBILE DEV
 tags:
-- "--아이폰"
+- ios
 modified_time: '2019-10-21T06:03:49.170-07:00'
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-1805000851639234666
 blogger_orig_url: https://yunhos.blogspot.com/2019/10/ios-gcd-grand-central-dispatch.html

@@ -3,8 +3,10 @@ layout: post
 title: cocoapods 아이폰 라이브러리관리 프로그램
 date: '2019-09-29T02:27:00.002-07:00'
 author: schoolhompy
+categories:
+- MOBILE DEV
 tags:
-- 아이폰
+- ios
 modified_time: '2019-09-29T02:27:56.279-07:00'
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-8480142909433417795
 blogger_orig_url: https://yunhos.blogspot.com/2019/09/cocoapods.html

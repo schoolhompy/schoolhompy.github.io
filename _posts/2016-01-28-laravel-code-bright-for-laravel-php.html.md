@@ -5,7 +5,9 @@ date: '2016-01-28T05:27:00.000-08:00'
 author: schoolhompy
 tags:
 - Laravel
-- php
+- PHP
+categories:
+- BACKEND
 modified_time: '2017-06-25T02:22:53.871-07:00'
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-1093674256115685110
 blogger_orig_url: https://yunhos.blogspot.com/2016/01/laravel-code-bright-for-laravel-php.html

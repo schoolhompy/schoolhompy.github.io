@@ -3,8 +3,11 @@ layout: post
 title: AndroidStudio 실행이 안되고 응답없을떄
 date: '2016-02-20T17:18:00.000-08:00'
 author: schoolhompy
+categories:
+- MOBILE DEV
 tags:
-- 안드로이드
+- android
+
 modified_time: '2017-06-25T02:22:54.093-07:00'
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-2900321017934093253
 blogger_orig_url: https://yunhos.blogspot.com/2016/02/androidstudio.html

@@ -4,7 +4,7 @@ title: aspectj execution 클래스 포함/제외
 date: '2021-01-20T23:03:00.002-08:00'
 author: schoolhompy
 tags:
-- aspectj
+- AspectJ
 modified_time: '2021-01-20T23:03:49.466-08:00'
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-2752554165312726998
 blogger_orig_url: https://yunhos.blogspot.com/2021/01/aspectj-execution.html

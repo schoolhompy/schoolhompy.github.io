@@ -5,6 +5,8 @@ date: '2014-02-06T23:56:00.003-08:00'
 author: schoolhompy
 tags:
 - cocos2dx
+categories:
+- GAME DEV
 modified_time: '2017-06-25T02:22:52.065-07:00'
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-1173567325296087337
 blogger_orig_url: https://yunhos.blogspot.com/2014/02/eclipse-cocos2dx-222-classes_6.html

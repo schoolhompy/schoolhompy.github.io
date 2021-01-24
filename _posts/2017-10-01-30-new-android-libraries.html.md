@@ -3,8 +3,11 @@ layout: post
 title: 30 new Android Libraries
 date: '2017-10-01T22:14:00.001-07:00'
 author: schoolhompy
+categories:
+- MOBILE DEV
 tags:
-- 안드로이드
+- android
+
 modified_time: '2017-10-01T22:14:04.480-07:00'
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-7658590861098666888
 blogger_orig_url: https://yunhos.blogspot.com/2017/10/30-new-android-libraries.html

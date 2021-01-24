@@ -4,7 +4,9 @@ title: php design patterns
 date: '2015-10-15T09:13:00.001-07:00'
 author: schoolhompy
 tags:
-- php
+- PHP
+categories:
+- BACKEND
 modified_time: '2017-06-25T02:22:53.443-07:00'
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-4344042004356405746
 blogger_orig_url: https://yunhos.blogspot.com/2015/10/php-design-patterns_15.html

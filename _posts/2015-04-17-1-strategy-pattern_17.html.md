@@ -5,7 +5,7 @@ date: '2015-04-17T00:54:00.001-07:00'
 author: schoolhompy
 tags:
 - design pattern
-- 안드로이드
+- Android
 modified_time: '2017-06-25T02:22:53.176-07:00'
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-4636333570472282536
 blogger_orig_url: https://yunhos.blogspot.com/2015/04/1-strategy-pattern_17.html

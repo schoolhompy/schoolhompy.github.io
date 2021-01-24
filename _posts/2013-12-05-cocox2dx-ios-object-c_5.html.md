@@ -5,6 +5,8 @@ date: '2013-12-05T19:29:00.003-08:00'
 author: schoolhompy
 tags:
 - cocos2dx
+categories:
+- GAME DEV
 modified_time: '2017-06-25T02:22:51.125-07:00'
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-5952076411251782131
 blogger_orig_url: https://yunhos.blogspot.com/2013/12/cocox2dx-ios-object-c_5.html

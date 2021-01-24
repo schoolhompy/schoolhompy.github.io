@@ -3,8 +3,9 @@ layout: post
 title: Amazon 서버스(AWS) 자료 알찬곳
 date: '2016-07-31T22:08:00.000-07:00'
 author: schoolhompy
+categories:
+- DEVOPS
 tags:
-- 서버 및 보안
 - aws
 modified_time: '2017-10-18T18:11:47.553-07:00'
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-2680963977781715254

@@ -3,8 +3,9 @@ layout: post
 title: EC2 AWS 마켓플레이스 를 이용해서 WordPress 서비스 생성하기
 date: '2017-10-18T20:50:00.002-07:00'
 author: schoolhompy
+categories:
+- DEVOPS
 tags:
-- wordpress
 - aws
 modified_time: '2017-10-18T20:50:38.403-07:00'
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-8955982858896943471

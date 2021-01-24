@@ -3,6 +3,8 @@ layout: post
 title: 5 Useful Docker Tips and Tricks on Windows
 date: '2018-04-01T03:43:00.000-07:00'
 author: schoolhompy
+categories:
+- DEVOPS
 tags:
 - docker
 modified_time: '2018-04-01T03:43:12.417-07:00'

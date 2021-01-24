@@ -3,9 +3,10 @@ layout: post
 title: Spring Cloud Zuul
 date: '2020-06-27T22:29:00.000-07:00'
 author: schoolhompy
+categories:
+- BACKEND
 tags:
-- Spring Cloud
-- zuul
+- Springboot Cloud
 modified_time: '2020-06-27T22:29:09.936-07:00'
 blogger_id: tag:blogger.com,1999:blog-4954243635432022205.post-2025934657699475817
 blogger_orig_url: https://yunhos.blogspot.com/2020/06/spring-cloud-zuul.html
